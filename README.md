@@ -28,3 +28,17 @@ Want to create reveal.js presentation in a graphical editor? Try <https://slides
 <div align="center">
   MIT licensed | Copyright © 2011-2024 Hakim El Hattab, https://hakim.se
 </div>
+
+---
+
+### Deployment (GitHub Pages)
+
+- This repository includes a GitHub Actions workflow that builds the presentation and publishes it to GitHub Pages on pushes to the `main` branch.
+- After the push you did, the site should be available at:
+
+  - Project page: https://Geilevideossos.github.io/DIC-Pr-si
+
+  (If you used a different repository name, replace the repo segment accordingly.)
+
+- If the site does not appear immediately, check the repository's **Actions** tab to verify the workflow ran successfully and **Settings → Pages** for the published source. The first deployment can take a few minutes.
+
