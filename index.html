@@ -1,5 +1,5 @@
 <!doctype html>
-<!-- V1.0 -->
+<!-- V1.1 -->
 <html lang="de">
 	<head>
 		<meta charset="utf-8">
@@ -46,7 +46,7 @@
 					<h1>SRAM</h1>
 					<h3>Static Random Access Memory</h3>
 					<p style="margin-top: 60px; font-size: 0.8em;">Eine Einführung in Computerspeicher und Mikrocontroller</p>
-					<p style="margin-top: 40px; font-size: 0.6em;">Digital Technik - Dezember 2025</p>
+					<p style="margin-top: 40px; font-size: 0.6em;">Digital Technik - Daniel.Supper 3AHEL - 8.1.2025</p>
 				</section>
 
 				<!-- Slide 2: Was ist ein Computer? -->
@@ -59,7 +59,7 @@
 					</div>
 				</section>
 
-				<!-- Slide 3: CPU + Speicher + I/O -->
+				<!-- Slide 3: Von-Neumann-Architektur -->
 				<section>
 					<h2>Von-Neumann-Architektur</h2>
 					<div style="margin-top: 40px; text-align: left; font-size: 0.85em;">
@@ -69,7 +69,7 @@
 						</div>
 						<div class="tech-box">
 							<strong>Memory (Speicher):</strong><br>
-							RAM (schnell, flüchtig) & Flash (langsam, persistent)
+							RAM (schnell, flüchtig) &amp; Flash (langsam, persistent)
 						</div>
 						<div class="tech-box">
 							<strong>I/O (Ein-/Ausgabe):</strong><br>
@@ -78,7 +78,43 @@
 					</div>
 				</section>
 
-				<!-- Slide 4: Was ist RAM allgemein? -->
+				<!-- Slide 4: Speichertypen im Vergleich -->
+				<section>
+					<h2>Speichertypen im Vergleich</h2>
+					<table class="comparison-table" style="margin-top: 40px; width: 95%; font-size: 0.75em;">
+						<tr style="background: #555;">
+							<th style="padding: 10px;">Speichertyp</th>
+							<th style="padding: 10px;">Geschwindigkeit</th>
+							<th style="padding: 10px;">Kapazität</th>
+							<th style="padding: 10px;">Persistenz</th>
+							<th style="padding: 10px;">Anwendung</th>
+						</tr>
+						<tr>
+							<td><strong>RAM</strong></td>
+							<td>⚡ Sehr schnell</td>
+							<td>MB - GB</td>
+							<td>Flüchtig</td>
+							<td>Laufzeit</td>
+						</tr>
+						<tr>
+							<td><strong>Flash (SSD)</strong></td>
+							<td>🟢 Schnell</td>
+							<td>GB - TB</td>
+							<td>Persistent</td>
+							<td>Programme</td>
+						</tr>
+						<tr>
+							<td><strong>HDD</strong></td>
+							<td>🔴 Langsam</td>
+							<td>TB</td>
+							<td>Persistent</td>
+							<td>Massenspeicher</td>
+						</tr>
+					</table>
+					<p style="margin-top: 20px; font-size: 0.8em;">💡 <strong>Faustregel:</strong> Je schneller = je teurer &amp; weniger Kapazität</p>
+				</section>
+
+				<!-- Slide 5: Was ist RAM allgemein? -->
 				<section>
 					<h2>Was ist RAM?</h2>
 					<p style="margin-top: 40px;"><strong>RAM = Random Access Memory</strong></p>
@@ -90,7 +126,7 @@
 					</ul>
 				</section>
 
-				<!-- Slide 5: DRAM vs SRAM Übersicht -->
+				<!-- Slide 6: DRAM vs SRAM Übersicht -->
 				<section>
 					<h2>DRAM vs SRAM</h2>
 					<table class="comparison-table" style="margin-top: 40px; width: 90%;">
@@ -127,7 +163,7 @@
 					</table>
 				</section>
 
-				<!-- Slide 6: Wie funktioniert DRAM? -->
+				<!-- Slide 7: Wie funktioniert DRAM? -->
 				<section>
 					<h2>Funktionsweise: DRAM</h2>
 					<div style="margin-top: 50px; text-align: left; font-size: 0.85em;">
@@ -141,7 +177,7 @@
 					</div>
 				</section>
 
-				<!-- Slide 7: Wie funktioniert SRAM? -->
+				<!-- Slide 8: Wie funktioniert SRAM? -->
 				<section>
 					<h2>Funktionsweise: SRAM</h2>
 					<div style="margin-top: 50px; text-align: left; font-size: 0.85em;">
@@ -155,7 +191,7 @@
 					</div>
 				</section>
 
-				<!-- Slide 8: Warum SRAM in Mikrocontrollern? -->
+				<!-- Slide 9: Warum SRAM in Mikrocontrollern? -->
 				<section>
 					<h2>Warum SRAM in µC-Prozessoren?</h2>
 					<div style="margin-top: 50px; text-align: left; font-size: 0.9em;">
@@ -167,7 +203,7 @@
 					</div>
 				</section>
 
-				<!-- Slide 9: SRAM Vor-/Nachteile -->
+				<!-- Slide 10: SRAM Vor-/Nachteile -->
 				<section>
 					<h2>SRAM: Vor- und Nachteile</h2>
 					<div style="margin-top: 40px; display: flex; gap: 30px;">
@@ -192,7 +228,7 @@
 					</div>
 				</section>
 
-				<!-- Slide 10: SRAM in echten Microcontrollern -->
+				<!-- Slide 11: SRAM in echten Microcontrollern -->
 				<section>
 					<h2>SRAM in Microcontrollern</h2>
 					<table class="comparison-table" style="margin-top: 40px; width: 90%; font-size: 0.75em;">
@@ -220,18 +256,18 @@
 					<p style="margin-top: 30px; font-size: 0.8em;">🔑 SRAM = Laufzeit-Speicher, Flash = Programmspeicher</p>
 				</section>
 
-				<!-- Slide 11: Minecraft RAM Aufbau -->
+				<!-- Slide 12: Minecraft RAM Aufbau -->
 				<section>
 					<h2>Fun-Fact: RAM in Minecraft</h2>
 					<div style="margin-top: 50px; text-align: left; font-size: 0.9em;">
-						<p style="margin-bottom: 20px;">🎮 Mit Redstone & Repeater lässt sich ein <strong>RAM-ähnlicher Speicher</strong> bauen!</p>
+						<p style="margin-bottom: 20px;">🎮 Mit Redstone &amp; Repeater lässt sich ein <strong>RAM-ähnlicher Speicher</strong> bauen!</p>
 						<p style="margin-bottom: 20px;">📦 <strong>RS-NOR-Flipflop:</strong> Speichert 1 Bit (an/aus)</p>
 						<p style="margin-bottom: 20px;">🔧 Mehrere kombiniert = Speicherblock</p>
 						<p style="margin-bottom: 20px;">💡 Zeigt: Digitale Logik funktioniert überall - auch im Spiel!</p>
 					</div>
 				</section>
 
-				<!-- Slide 12: Fazit -->
+				<!-- Slide 13: Fazit -->
 				<section>
 					<h2>Fazit</h2>
 					<div style="margin-top: 50px; text-align: left; font-size: 0.9em;">
@@ -245,10 +281,10 @@
 					</div>
 				</section>
 
-				<!-- Slide 13: Fragerunde -->
+				<!-- Slide 14: Fragerunde -->
 				<section>
-					<h1>Fragen?</h1>
-					<p style="margin-top: 60px; font-size: 0.85em;">Danke für eure Aufmerksamkeit!</p>
+					<h3>Gibt es noch Fragen?</h3>
+					<p style="margin-top: 60px; font-size: 0.85em;">Oder Feedback gerne!</p>
 				</section>
 			</div>
 		</div>
