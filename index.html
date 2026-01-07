@@ -46,10 +46,12 @@
 					<h1>SRAM</h1>
 					<h3>Static Random Access Memory</h3>
 					<p style="margin-top: 60px; font-size: 0.8em;">Eine Einführung in Computerspeicher und Mikrocontroller</p>
-					<p style="margin-top: 40px; font-size: 0.6em;">Digital Technik - Daniel.Supper 3AHEL - 8.1.2025</p>
+					<p style="margin-top: 40px; font-size: 0.6em;">Digital Technik - Daniel.Supper 3AHEL - 8.1.2026</p>
 				</section>
 
-				<!-- Slide 2: Was ist ein Computer? -->
+<!-- Slide 2: Was ist ein Computer? (Parent with vertical slides) -->
+			<section>
+				<!-- Slide 2.0: Was ist ein Computer? (Hauptslide - nur Titel) -->
 				<section>
 					<h2>Was ist ein Computer?</h2>
 					<div style="margin-top: 50px; font-size: 0.9em;">
@@ -58,24 +60,74 @@
 						<p>🔌 <strong>Ein-/Ausgabe:</strong> I/O, Sensoren, Aktoren</p>
 					</div>
 				</section>
-
-				<!-- Slide 3: Von-Neumann-Architektur -->
+				<!-- Slide 2.1: Von-Neumann-Architektur (Visualisierung) -->
 				<section>
-					<h2>Von-Neumann-Architektur</h2>
-					<div style="margin-top: 40px; text-align: left; font-size: 0.85em;">
-						<div class="tech-box">
-							<strong>CPU (Prozessor):</strong><br>
-							Führt Befehle aus, verarbeitet Daten
-						</div>
-						<div class="tech-box">
-							<strong>Memory (Speicher):</strong><br>
-							RAM (schnell, flüchtig) &amp; Flash (langsam, persistent)
-						</div>
-						<div class="tech-box">
-							<strong>I/O (Ein-/Ausgabe):</strong><br>
-							Sensoren, LEDs, Motoren, Kommunikation
-						</div>
+					<h3>Von-Neumann-Architektur</h3>
+					<svg style="margin: 30px auto; display: block; width: 90%; max-width: 600px;" viewBox="0 0 550 350">
+						<!-- CPU Box -->
+						<rect x="50" y="20" width="100" height="80" fill="#ff6b6b" stroke="#fff" stroke-width="2"/>
+						<text x="100" y="65" text-anchor="middle" fill="#fff" font-size="16" font-weight="bold">CPU</text>
+						
+						<!-- Memory Box -->
+						<rect x="200" y="20" width="100" height="80" fill="#4ecdc4" stroke="#fff" stroke-width="2"/>
+						<text x="250" y="65" text-anchor="middle" fill="#fff" font-size="16" font-weight="bold">Memory</text>
+						
+						<!-- I/O Box -->
+						<rect x="350" y="20" width="100" height="80" fill="#95e1d3" stroke="#fff" stroke-width="2"/>
+						<text x="400" y="65" text-anchor="middle" fill="#000" font-size="16" font-weight="bold">I/O</text>
+						
+						<!-- Connections -->
+						<line x1="150" y1="60" x2="200" y2="60" stroke="#fff" stroke-width="2" marker-end="url(#arrowhead)"/>
+						<line x1="300" y1="60" x2="350" y2="60" stroke="#fff" stroke-width="2" marker-end="url(#arrowhead)"/>
+						
+						<!-- Labels -->
+						<text x="100" y="150" text-anchor="middle" fill="#fff" font-size="12"><tspan>Befehl</tspan><tspan x="100" dy="15">verarbeitung</tspan></text>
+						<text x="250" y="150" text-anchor="middle" fill="#fff" font-size="12"><tspan>Daten &amp;</tspan><tspan x="250" dy="15">Programme</tspan></text>
+						<text x="400" y="150" text-anchor="middle" fill="#fff" font-size="12"><tspan>Sensoren,</tspan><tspan x="400" dy="15">Aktoren</tspan></text>
+						
+						<!-- Control Bus -->
+						<line x1="100" y1="110" x2="100" y2="200" stroke="#ffd93d" stroke-width="2" stroke-dasharray="5,5"/>
+						<line x1="250" y1="110" x2="250" y2="200" stroke="#ffd93d" stroke-width="2" stroke-dasharray="5,5"/>
+						<line x1="400" y1="110" x2="400" y2="200" stroke="#ffd93d" stroke-width="2" stroke-dasharray="5,5"/>
+					<line x1="50" y1="200" x2="500" y2="200" stroke="#ffd93d" stroke-width="2" stroke-dasharray="5,5"/>
+					<text x="275" y="225" text-anchor="middle" fill="#ffd93d" font-size="12">Kontrollbus</text>
+								<polygon points="0 0, 10 3, 0 6" fill="#fff"/>
+							</marker>
+						</defs>
+					</svg>
+					<p style="font-size: 0.8em; margin-top: 20px;">Alle Komponenten kommunizieren über Busse (Daten-, Adress-, Kontrollbus)</p>
+				</section>
+
+				<!-- Slide 2.2: Datenbus Konzept (mit Factorio Vergleich) -->
+				<section>
+					<h3>Der Datenbus</h3>
+					<div style="margin-top: 30px; text-align: left; font-size: 0.85em;">
+						<p><strong>🚂 Konzept:</strong> Ein Datenbus ist wie ein <strong>Förderband in Factorio</strong></p>
+						<ul style="margin-top: 15px; margin-left: 20px;">
+							<li><strong>Daten = Items:</strong> CPU, Memory, I/O schicken Daten über den Bus</li>
+							<li><strong>Breite des Buses:</strong> 8-bit, 16-bit, 32-bit, 64-bit (wie Förderband-Kapazität)</li>
+							<li><strong>Geschwindigkeit:</strong> MHz/GHz (wie Förderband-Durchsatz)</li>
+							<li><strong>"Main Bus":</strong> Der Hauptbus verbindet alle Komponenten</li>
+						</ul>
+						<p style="margin-top: 15px; font-size: 0.8em; color: #aaa;">In Factorio: Je breiter der Bus, desto mehr Items/Sekunde. Genauso: Je breiter der Datenbus, desto mehr Bits pro Zyklus!</p>
 					</div>
+				</section>
+
+				<!-- Slide 2.3: John von Neumann - Historischer Hintergrund -->
+				<section>
+					<h3>John von Neumann (1903–1957)</h3>
+					<div style="margin-top: 25px; text-align: left; font-size: 0.8em; line-height: 1.5;">
+						<p><strong>🇭🇺 Budapest</strong> → USA (Emigrant vor Nazismus)</p>
+						<p style="margin-top: 10px;"><strong>💣 Manhattan-Projekt:</strong> Entwicklung der ersten Atombombe (WW2)</p>
+						<p style="margin-top: 10px;"><strong>💻 Informatik-Revolution:</strong></p>
+						<ul style="margin-top: 5px; margin-left: 20px;">
+							<li>ENIAC (1945): Erster elektronischer Universalrechner</li>
+							<li>Von-Neumann-Architektur (1945): Speicherprogrammiertes Konzept</li>
+							<li>Grundlage ALLER modernen Computer</li>
+						</ul>
+						<p style="margin-top: 10px; font-size: 0.75em; color: #aaa;">🔬 Fun Fact: Für die Atombombe-Berechnungen brauchte man ENIAC → Das führte zur Erfindung des modernen Computers!</p>
+					</div>
+				</section>
 				</section>
 
 				<!-- Slide 4: Speichertypen im Vergleich -->
