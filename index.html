@@ -130,215 +130,300 @@
 				</section>
 				</section>
 
-				<!-- Slide 4: Speichertypen im Vergleich -->
+				<!-- Slide 3: Speichertypen im Vergleich (Parent) -->
 				<section>
-					<h2>Speichertypen im Vergleich</h2>
-					<table class="comparison-table" style="margin-top: 40px; width: 95%; font-size: 0.75em;">
-						<tr style="background: #555;">
-							<th style="padding: 10px;">Speichertyp</th>
-							<th style="padding: 10px;">Geschwindigkeit</th>
-							<th style="padding: 10px;">Kapazität</th>
-							<th style="padding: 10px;">Persistenz</th>
-							<th style="padding: 10px;">Anwendung</th>
-						</tr>
-						<tr>
-							<td><strong>RAM</strong></td>
-							<td>⚡ Sehr schnell</td>
-							<td>MB - GB</td>
-							<td>Flüchtig</td>
-							<td>Laufzeit</td>
-						</tr>
-						<tr>
-							<td><strong>Flash (SSD)</strong></td>
-							<td>🟢 Schnell</td>
-							<td>GB - TB</td>
-							<td>Persistent</td>
-							<td>Programme</td>
-						</tr>
-						<tr>
-							<td><strong>HDD</strong></td>
-							<td>🔴 Langsam</td>
-							<td>TB</td>
-							<td>Persistent</td>
-							<td>Massenspeicher</td>
-						</tr>
-					</table>
-					<p style="margin-top: 20px; font-size: 0.8em;">💡 <strong>Faustregel:</strong> Je schneller = je teurer &amp; weniger Kapazität</p>
-				</section>
+					<!-- Slide 3.0: Speichertypen Übersicht -->
+					<section>
+						<h2>Speichertypen im Überblick</h2>
+						<div style="margin-top: 50px; text-align: left; font-size: 0.85em;">
+							<p><strong>🏃‍♂️ Schnell &amp; Flüchtig:</strong> RAM (DRAM, SRAM)</p>
+							<p style="margin-top: 15px;"><strong>💾 Dauerhaft &amp; Schnell:</strong> Flash / SSD</p>
+							<p style="margin-top: 15px;"><strong>🐢 Dauerhaft &amp; Langsam:</strong> HDD</p>
+							<p style="margin-top: 30px; font-size: 0.75em; color: #aaa;">💡 <strong>Faustregel:</strong> Je schneller = je teurer &amp; weniger Kapazität</p>
+						</div>
+					</section>
 
-				<!-- Slide 5: Was ist RAM allgemein? -->
-				<section>
-					<h2>Was ist RAM?</h2>
-					<p style="margin-top: 40px;"><strong>RAM = Random Access Memory</strong></p>
-					<ul style="margin-top: 40px; font-size: 0.9em;">
-						<li>⚡ <strong>Sehr schnell:</strong> ~1-10 Nanosekunden</li>
-						<li>🔄 <strong>Flüchtig:</strong> Daten verloren nach Stromabschalter</li>
-						<li>📍 <strong>Direkt adressierbar:</strong> Jede Speicherstelle kann sofort zugegriffen</li>
-						<li>💰 <strong>Teuer:</strong> Hohe Kosten pro Bit</li>
-					</ul>
-				</section>
-
-				<!-- Slide 6: DRAM vs SRAM Übersicht -->
-				<section>
-					<h2>DRAM vs SRAM</h2>
-					<table class="comparison-table" style="margin-top: 40px; width: 90%;">
-						<tr style="background: #555;">
-							<th style="padding: 10px;">Eigenschaft</th>
-							<th style="padding: 10px;">DRAM</th>
-							<th style="padding: 10px;">SRAM</th>
-						</tr>
-						<tr>
-							<td><strong>Kapazität</strong></td>
-							<td>GB</td>
-							<td>KB - MB</td>
-						</tr>
-						<tr>
-							<td><strong>Geschwindigkeit</strong></td>
-							<td>Langsamer</td>
-							<td>Schneller</td>
-						</tr>
-						<tr>
-							<td><strong>Kosten</strong></td>
-							<td>Günstig</td>
-							<td>Teuer</td>
-						</tr>
-						<tr>
-							<td><strong>Komplexität</strong></td>
-							<td>1 Transistor</td>
-							<td>6 Transistoren</td>
-						</tr>
-						<tr>
-							<td><strong>Anwendung</strong></td>
-							<td>PC, Laptop</td>
-							<td>Mikrocontroller</td>
-						</tr>
-					</table>
-				</section>
-
-				<!-- Slide 7: Wie funktioniert DRAM? -->
-				<section>
-					<h2>Funktionsweise: DRAM</h2>
-					<div style="margin-top: 50px; text-align: left; font-size: 0.85em;">
-						<p style="margin-bottom: 30px;"><strong>DRAM = Dynamic RAM</strong></p>
-						<ul>
-							<li>📦 <strong>1 Transistor + 1 Kondensator:</strong> Speichert Bit als Ladung</li>
-							<li>⚠️ <strong>Kondensator entlädt sich:</strong> Muss regelmäßig "refreshed" werden</li>
-							<li>🔄 <strong>Refresh = Mehraufwand:</strong> Zusätzliche Zyklen für Datensicherung</li>
-							<li>📉 <strong>Aber: Hohe Kapazität</strong> pro Fläche</li>
-						</ul>
-					</div>
-				</section>
-
-				<!-- Slide 8: Wie funktioniert SRAM? -->
-				<section>
-					<h2>Funktionsweise: SRAM</h2>
-					<div style="margin-top: 50px; text-align: left; font-size: 0.85em;">
-						<p style="margin-bottom: 30px;"><strong>SRAM = Static RAM</strong></p>
-						<ul>
-							<li>🔌 <strong>6 Transistoren (Flipflop):</strong> Speichert Bit stabil</li>
-							<li>✅ <strong>Kein Refresh nötig:</strong> Solange Strom anliegt, bleibt Wert erhalten</li>
-							<li>⚡ <strong>Schneller:</strong> Keine Refresh-Verzögerungen</li>
-							<li>❌ <strong>Aber: Weniger Kapazität</strong> pro Fläche</li>
-						</ul>
-					</div>
-				</section>
-
-				<!-- Slide 9: Warum SRAM in Mikrocontrollern? -->
-				<section>
-					<h2>Warum SRAM in µC-Prozessoren?</h2>
-					<div style="margin-top: 50px; text-align: left; font-size: 0.9em;">
-						<p style="margin-bottom: 20px;">✅ <strong>Schnelle Zugriffe erforderlich</strong></p>
-						<p style="margin-bottom: 20px;">✅ <strong>Wenig Speicher nötig</strong> (KB-MB genügen)</p>
-						<p style="margin-bottom: 20px;">✅ <strong>Einfache Integration</strong> auf Chip</p>
-						<p style="margin-bottom: 20px;">✅ <strong>Günstige Refresh:</strong> Keine Overhead-Zyklen</p>
-						<p style="margin-bottom: 20px;">✅ <strong>Niedrige Latenz:</strong> Echtzeit-Anforderungen</p>
-					</div>
-				</section>
-
-				<!-- Slide 10: SRAM Vor-/Nachteile -->
-				<section>
-					<h2>SRAM: Vor- und Nachteile</h2>
-					<div style="margin-top: 40px; display: flex; gap: 30px;">
-						<div style="flex: 1; text-align: left; font-size: 0.85em;">
-							<h4 style="color: #90ee90;">✅ Vorteile</h4>
+					<!-- Slide 3.1: RAM (allgemein) -->
+					<section>
+						<h3>RAM: Random Access Memory</h3>
+						<div style="margin-top: 40px; text-align: left; font-size: 0.85em;">
 							<ul>
-								<li>Sehr schnell</li>
-								<li>Zuverlässig</li>
-								<li>Keine Refresh-Verzögerung</li>
-								<li>Einfache Implementierung</li>
+								<li>⚡ <strong>Sehr schnell:</strong> ~1-10 Nanosekunden</li>
+								<li>🔄 <strong>Flüchtig:</strong> Daten verloren nach Stromausfall</li>
+								<li>📍 <strong>Direkt adressierbar:</strong> Schneller Zugriff auf jede Stelle</li>
+								<li>💰 <strong>Teuer pro Bit:</strong> Premium-Speicher</li>
+							</ul>
+							<p style="margin-top: 30px; font-size: 0.8em; color: #aaa;">Verwendet in: PC-Arbeitsspeicher, Prozessoren, Speicherhierarchie</p>
+						</div>
+					</section>
+
+					<!-- Slide 3.2: Flash / SSD -->
+					<section>
+						<h3>Flash / SSD Speicher</h3>
+						<div style="margin-top: 40px; text-align: left; font-size: 0.85em;">
+							<ul>
+								<li>🟢 <strong>Schnell:</strong> Microsekunden-Bereich</li>
+								<li>💾 <strong>Persistent:</strong> Daten bleiben nach Stromausfall</li>
+								<li>🎯 <strong>Große Kapazität:</strong> GB - TB möglich</li>
+								<li>💲 <strong>Günstig pro Bit:</strong> Speichern von großen Datenmengen</li>
+							</ul>
+							<p style="margin-top: 30px; font-size: 0.8em; color: #aaa;">Verwendet in: Laptop-SSDs, USB-Sticks, Smartphone-Speicher, Programmspeicher µC</p>
+						</div>
+					</section>
+
+					<!-- Slide 3.3: HDD -->
+					<section>
+						<h3>HDD: Festplattenspeicher</h3>
+						<div style="margin-top: 40px; text-align: left; font-size: 0.85em;">
+							<ul>
+								<li>🔴 <strong>Langsam:</strong> Millisekunden (mechanische Verzögerung)</li>
+								<li>💾 <strong>Persistent:</strong> Langfristige Datensicherung</li>
+								<li>🎯 <strong>Riesige Kapazität:</strong> TB - EB möglich</li>
+								<li>💸 <strong>Sehr günstig pro TB:</strong> Massenspeicher</li>
+							</ul>
+							<p style="margin-top: 30px; font-size: 0.8em; color: #aaa;">Verwendet in: Desktop-PCs, Serverspeicher, Backup-Systeme, Datenbanken</p>
+						</div>
+					</section>
+				</section>
+
+				<!-- Slide 4: DRAM vs SRAM (Parent) -->
+				<section>
+					<!-- Slide 4.0: DRAM vs SRAM Übersicht -->
+					<section>
+						<h2>DRAM vs SRAM</h2>
+						<table class="comparison-table" style="margin-top: 40px; width: 90%; font-size: 0.7em;">
+							<tr style="background: #555;">
+								<th style="padding: 8px;">Eigenschaft</th>
+								<th style="padding: 8px;">DRAM</th>
+								<th style="padding: 8px;">SRAM</th>
+							</tr>
+							<tr>
+								<td><strong>Aufbau</strong></td>
+								<td>1 Transistor + 1 Kondensator</td>
+								<td>6 Transistoren (Flipflop)</td>
+							</tr>
+							<tr>
+								<td><strong>Kapazität</strong></td>
+								<td>GB</td>
+								<td>KB - MB</td>
+							</tr>
+							<tr>
+								<td><strong>Geschwindigkeit</strong></td>
+								<td>Langsamer</td>
+								<td>Viel schneller</td>
+							</tr>
+							<tr>
+								<td><strong>Refresh</strong></td>
+								<td>Nötig (alle ~ms)</td>
+								<td>Nicht nötig</td>
+							</tr>
+							<tr>
+								<td><strong>Kosten</strong></td>
+								<td>Günstig</td>
+								<td>Teuer</td>
+							</tr>
+						</table>
+					</section>
+
+					<!-- Slide 4.1: DRAM Funktionsweise -->
+					<section>
+						<h3>DRAM: Funktionsweise</h3>
+						<div style="margin-top: 40px; text-align: left; font-size: 0.85em;">
+							<p style="margin-bottom: 20px;"><strong>DRAM = Dynamic RAM</strong></p>
+							<ul>
+								<li>📦 <strong>1 Transistor + 1 Kondensator:</strong> Speichert Bit als elektrische Ladung</li>
+								<li>⚠️ <strong>Problem:</strong> Kondensator entlädt sich mit der Zeit (~1-100ms)</li>
+								<li>🔄 <strong>Lösung: Refresh-Zyklus</strong> muss regelmäßig die Ladung auffrischen</li>
+								<li>📉 <strong>Vorteil:</strong> Hohe Kapazität pro Fläche = GB möglich</li>
+								<li>⏱️ <strong>Nachteil:</strong> Refresh kostet Zeit = langsamer</li>
 							</ul>
 						</div>
-						<div style="flex: 1; text-align: left; font-size: 0.85em;">
-							<h4 style="color: #ff6b6b;">❌ Nachteile</h4>
-							<ul>
-								<li>Teuer pro Bit</li>
-								<li>Weniger Kapazität</li>
-								<li>Höherer Stromverbrauch</li>
-								<li>Größerer Platzbedarf</li>
+					</section>
+
+					<!-- Slide 4.2: DRAM Anwendung -->
+					<section>
+						<h3>DRAM: Wo wird es verwendet?</h3>
+						<div style="margin-top: 40px; text-align: left; font-size: 0.85em;">
+							<p style="margin-bottom: 20px;"><strong>💻 PC &amp; Laptop RAM</strong></p>
+							<ul style="margin-left: 20px;">
+								<li>8 GB, 16 GB, 32 GB - große Kapazität nötig</li>
+								<li>Refresh-Overhead ist akzeptabel bei Desktop-Systemen</li>
+								<li>Günstig pro GB = wirtschaftlich</li>
+							</ul>
+							<p style="margin-top: 20px; margin-bottom: 10px;"><strong>🎮 Gaming / Video-Editing</strong></p>
+							<ul style="margin-left: 20px;">
+								<li>Viele Gigabyte Speicher für große Dateien</li>
+								<li>Geschwindigkeit wichtig, aber Kapazität kritischer</li>
 							</ul>
 						</div>
-					</div>
+					</section>
+
+					<!-- Slide 4.3: SRAM Funktionsweise -->
+					<section>
+						<h3>SRAM: Funktionsweise</h3>
+						<div style="margin-top: 40px; text-align: left; font-size: 0.85em;">
+							<p style="margin-bottom: 20px;"><strong>SRAM = Static RAM</strong></p>
+							<ul>
+								<li>🔌 <strong>6 Transistoren (RS-Flipflop):</strong> Speichert Bit stabil in Logikelementen</li>
+								<li>✅ <strong>Keine Entladung:</strong> Bit-Wert bleibt solange Strom anliegt</li>
+								<li>⚡ <strong>Schneller:</strong> Kein Refresh-Overhead nötig</li>
+								<li>❌ <strong>Weniger Kapazität:</strong> Nur KB - MB möglich (wegen 6 Transistoren)</li>
+								<li>💰 <strong>Teuer:</strong> Viel mehr Fläche pro Bit als DRAM</li>
+							</ul>
+						</div>
+					</section>
+
+					<!-- Slide 4.4: SRAM Anwendung -->
+					<section>
+						<h3>SRAM: Wo wird es verwendet?</h3>
+						<div style="margin-top: 40px; text-align: left; font-size: 0.85em;">
+							<p style="margin-bottom: 20px;"><strong>⚡ CPU Cache (L1, L2, L3)</strong></p>
+							<ul style="margin-left: 20px;">
+								<li>Ultraschnelle Zugriffe erforderlich (Nanosekunden)</li>
+								<li>Kapazität ist klein (KB - MB) aber Geschwindigkeit ist kritisch</li>
+							</ul>
+							<p style="margin-top: 20px; margin-bottom: 10px;"><strong>🔧 Mikrocontroller</strong></p>
+							<ul style="margin-left: 20px;">
+								<li>Embedded-Systeme brauchen schnelle, zuverlässige Speicher</li>
+								<li>Kapazität ist klein (2 KB - 520 KB) und reicht aus</li>
+								<li>Echtzeit-Anforderungen → kein Refresh-Delay erlaubt</li>
+							</ul>
+						</div>
+					</section>
 				</section>
 
-				<!-- Slide 11: SRAM in echten Microcontrollern -->
+				<!-- Slide 5: SRAM in Mikrocontrollern (Parent) -->
 				<section>
-					<h2>SRAM in Microcontrollern</h2>
-					<table class="comparison-table" style="margin-top: 40px; width: 90%; font-size: 0.75em;">
-						<tr style="background: #555;">
-							<th style="padding: 10px;">µC</th>
-							<th style="padding: 10px;">SRAM</th>
-							<th style="padding: 10px;">Flash</th>
-						</tr>
-						<tr>
-							<td><strong>ATmega32</strong><br>(Arduino)</td>
-							<td>2 KB</td>
-							<td>32 KB</td>
-						</tr>
-						<tr>
-							<td><strong>STM32F4</strong><br>(ARM)</td>
-							<td>192 KB</td>
-							<td>512 KB</td>
-						</tr>
-						<tr>
-							<td><strong>ESP32</strong><br>(IoT)</td>
-							<td>520 KB</td>
-							<td>4 MB</td>
-						</tr>
-					</table>
-					<p style="margin-top: 30px; font-size: 0.8em;">🔑 SRAM = Laufzeit-Speicher, Flash = Programmspeicher</p>
+					<!-- Slide 5.0: SRAM in µC Übersicht -->
+					<section>
+						<h2>SRAM in Mikrocontrollern</h2>
+						<table class="comparison-table" style="margin-top: 35px; width: 95%; font-size: 0.7em;">
+							<tr style="background: #555;">
+								<th style="padding: 8px;">Mikrocontroller</th>
+								<th style="padding: 8px;">SRAM</th>
+								<th style="padding: 8px;">Flash (Programm)</th>
+								<th style="padding: 8px;">Verhältnis</th>
+							</tr>
+							<tr>
+								<td><strong>ATmega32</strong> (Arduino)</td>
+								<td>2 KB</td>
+								<td>32 KB</td>
+								<td>1:16</td>
+							</tr>
+							<tr>
+								<td><strong>STM32F4</strong> (ARM)</td>
+								<td>192 KB</td>
+								<td>512 KB</td>
+								<td>1:2.7</td>
+							</tr>
+							<tr>
+								<td><strong>ESP32</strong> (IoT)</td>
+								<td>520 KB</td>
+								<td>4 MB</td>
+								<td>1:7.7</td>
+							</tr>
+						</table>
+						<p style="margin-top: 20px; font-size: 0.75em; color: #aaa;">🔑 SRAM = Arbeitsspeicher zur Laufzeit | Flash = Programmspeicher (persistent)</p>
+					</section>
+
+					<!-- Slide 5.1: Wie SRAM in µC funktioniert -->
+					<section>
+						<h3>Wie funktioniert SRAM in µC?</h3>
+						<div style="margin-top: 40px; text-align: left; font-size: 0.8em;">
+							<p style="margin-bottom: 15px;"><strong>1. Programmstart:</strong></p>
+							<ul style="margin-left: 20px; margin-bottom: 15px;">
+								<li>Programm wird aus Flash geladen</li>
+								<li>Globale Variablen, Arrays, Objekte gehen in SRAM</li>
+							</ul>
+							<p style="margin-bottom: 15px;"><strong>2. Stack + Heap:</strong></p>
+							<ul style="margin-left: 20px; margin-bottom: 15px;">
+								<li>Stack: Lokale Variablen, Funktionsaufrufe</li>
+								<li>Heap: Dynamisch allokierte Speicher (malloc)</li>
+							</ul>
+							<p style="margin-bottom: 15px;"><strong>3. Laufzeitdaten:</strong></p>
+							<ul style="margin-left: 20px;">
+								<li>Sensor-Werte, Zustandsvariablen, Puffer</li>
+								<li>Alle ändern sich während das Programm läuft</li>
+							</ul>
+						</div>
+					</section>
+
+					<!-- Slide 5.2: Warum SRAM in µC? -->
+					<section>
+						<h3>Warum SRAM, nicht DRAM, nicht Flash?</h3>
+						<div style="margin-top: 35px; display: flex; gap: 20px;">
+							<div style="flex: 1; text-align: left; font-size: 0.75em;">
+								<h4 style="color: #90ee90;">✅ SRAM ist ideal</h4>
+								<ul>
+									<li>⚡ Ultraschnell (nötig für CPU)</li>
+									<li>✅ Kein Refresh (zuverlässig)</li>
+									<li>📍 Direkt on-chip (kurze Leitungen)</li>
+									<li>🔧 Einfache Integration</li>
+									<li>KB-MB reichen aus</li>
+								</ul>
+							</div>
+							<div style="flex: 1; text-align: left; font-size: 0.75em;">
+								<h4 style="color: #ff9999;">❌ Warum nicht andere?</h4>
+								<ul>
+									<li>DRAM: Zu langsam, braucht Refresh</li>
+									<li>Flash: Zu langsam für Laufzeitspeicher</li>
+									<li>HDD: Viel zu langsam, zu groß</li>
+									<li>Nur für Programmspeicher</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+
+					<!-- Slide 5.3: Speicherlayout in µC -->
+					<section>
+						<h3>Speicherlayout im Mikrocontroller</h3>
+						<div style="margin-top: 30px; font-size: 0.8em;">
+							<div style="background: #ff6b6b; padding: 15px; margin: 5px 0; border-radius: 5px;">
+								<strong>0x0000 - 0x7FFF: Flash (32 KB)</strong><br>
+								<span style="font-size: 0.8em; color: #ddd;">Programm-Code (unveränderlich)</span>
+							</div>
+							<div style="background: #4ecdc4; padding: 15px; margin: 5px 0; border-radius: 5px;">
+								<strong>0x8000 - 0x87FF: SRAM (2 KB)</strong><br>
+								<span style="font-size: 0.8em; color: #000;">Stack, Heap, Variablen (ändert sich bei Laufzeit)</span>
+							</div>
+							<div style="background: #95e1d3; padding: 15px; margin: 5px 0; border-radius: 5px;">
+								<strong>0x8800 - 0xFFFF: I/O Register, Speicher-Map</strong><br>
+								<span style="font-size: 0.8em; color: #000;">GPIO, UART, ADC, etc.</span>
+							</div>
+							<p style="margin-top: 20px; font-size: 0.75em; color: #aaa;">💡 Adressraum eines ATmega32 (Beispiel)</p>
+						</div>
+					</section>
 				</section>
 
-				<!-- Slide 12: Minecraft RAM Aufbau -->
+				<!-- Slide 6: Minecraft RAM Fun-Fact -->
 				<section>
 					<h2>Fun-Fact: RAM in Minecraft</h2>
 					<div style="margin-top: 50px; text-align: left; font-size: 0.9em;">
 						<p style="margin-bottom: 20px;">🎮 Mit Redstone &amp; Repeater lässt sich ein <strong>RAM-ähnlicher Speicher</strong> bauen!</p>
-						<p style="margin-bottom: 20px;">📦 <strong>RS-NOR-Flipflop:</strong> Speichert 1 Bit (an/aus)</p>
-						<p style="margin-bottom: 20px;">🔧 Mehrere kombiniert = Speicherblock</p>
-						<p style="margin-bottom: 20px;">💡 Zeigt: Digitale Logik funktioniert überall - auch im Spiel!</p>
+						<p style="margin-bottom: 20px;">📦 <strong>RS-NOR-Flipflop:</strong> Speichert 1 Bit stabil (an/aus)</p>
+						<p style="margin-bottom: 20px;">🔧 <strong>Mehrere kombiniert:</strong> 8er Speicherblock = 1 Byte</p>
+						<p style="margin-bottom: 20px;">💾 <strong>Adressierbar:</strong> Mit Decoder = volle RAM-Funktionalität</p>
+						<p style="font-size: 0.85em; color: #aaa;">💡 Zeigt: Die Prinzipien von Digitaler Logik &amp; RAM funktionieren überall - auch im Spiel!</p>
 					</div>
 				</section>
 
-				<!-- Slide 13: Fazit -->
+				<!-- Slide 7: Fazit -->
 				<section>
-					<h2>Fazit</h2>
-					<div style="margin-top: 50px; text-align: left; font-size: 0.9em;">
-						<p style="margin-bottom: 15px;"><strong>SRAM ist:</strong></p>
-						<ul>
-							<li>Der "Express-Speicher" von Mikrocontrollern</li>
-							<li>Notwendig für schnelle, zeitkritische Aufgaben</li>
-							<li>Ein Kompromiss: Geschwindigkeit vs. Kapazität</li>
-							<li>Fundamental für digitale Systeme überall</li>
-						</ul>
+					<h2>Fazit: Alles zusammen</h2>
+					<div style="margin-top: 45px; text-align: left; font-size: 0.9em; line-height: 1.8;">
+						<p style="margin-bottom: 15px;"><strong>💻 Speicherhierarchie:</strong> Cache (SRAM) → RAM (DRAM) → Flash → HDD</p>
+						<p style="margin-bottom: 15px;"><strong>⚡ SRAM ist der Kompromiss:</strong> Schnell, zuverlässig, aber teuer &amp; klein</p>
+						<p style="margin-bottom: 15px;"><strong>🔧 In Mikrocontrollern:</strong> SRAM für Laufzeit-Daten, Flash für Programm-Code</p>
+						<p style="margin-bottom: 15px;"><strong>🎯 Echtzeit-Systeme:</strong> Brauchen schnelle SRAM - keine Refresh-Verzögerungen!</p>
+						<p style="margin-top: 30px; font-size: 0.85em; color: #aaa;">💡 Die Prinzipien der Digitalen Logik finden sich überall wieder - von realen Prozessoren bis zu Minecraft! 🎮</p>
 					</div>
 				</section>
 
-				<!-- Slide 14: Fragerunde -->
+				<!-- Slide 8: Fragerunde -->
 				<section>
 					<h3>Gibt es noch Fragen?</h3>
 					<p style="margin-top: 60px; font-size: 0.85em;">Oder Feedback gerne!</p>
 				</section>
-			</div>
 		</div>
 
 		<script src="dist/reveal.js"></script>
