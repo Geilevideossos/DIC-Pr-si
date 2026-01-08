@@ -291,18 +291,24 @@
 					<!-- Slide 4.4: SRAM Aufbau mit 6 Transistoren -->
 					<section>
 						<h3>SRAM: Aufbau mit 6 Transistoren</h3>
-						<div style="margin-top: 20px; text-align: center;">
-							<img src="SRAM-Aufbau.png" alt="SRAM-Aufbau mit 6 Transistoren" style="max-width: 80%; height: auto; border: 1px solid #666; margin-bottom: 20px;">
-						</div>
-						<div style="text-align: left; font-size: 0.8em; margin-top: 20px;">
-							<p><strong>Aufbau-Erklärung:</strong></p>
-							<ul style="margin-left: 20px;">
-								<li><strong>4 Transistoren (M1-M4):</strong> Kreuzgekoppelte Inverter bilden das RS-Flipflop (speichert 1 Bit)</li>
-								<li><strong>2 Access-Transistoren (M5-M6):</strong> Steuern den Zugriff über Bitlines (BL, BLB) und Wordline (WL)</li>
-								<li><strong>Funktion:</strong> WL aktiviert Zugriff; BL/BLB lesen/schreiben den Bit-Wert</li>
-								<li><strong>Vorteil:</strong> Statisch - kein Refresh nötig, sehr schnell</li>
-							</ul>
-							<p style="margin-top: 15px; font-size: 0.7em; color: #aaa;"><strong>Quelle:</strong> <a href="https://www.iue.tuwien.ac.at/phd/entner/node34.html" target="_blank">TU Wien - SRAM Grundlagen</a></p>
+						<div style="display: flex; align-items: center; margin-top: 20px;">
+							<div style="flex: 1; text-align: center;">
+								<img src="SRAM-Aufbau.png" alt="SRAM-Aufbau mit 6 Transistoren" style="max-width: 100%; height: auto; border: 1px solid #666;">
+							</div>
+							<div style="flex: 1; text-align: left; font-size: 0.75em; padding-left: 20px;">
+								<p><strong>Aufbau:</strong></p>
+								<ul style="margin-left: 15px; line-height: 1.4;">
+									<li><strong>4 Transistoren (M1-M4):</strong> Kreuzgekoppelte Inverter (RS-Flipflop)</li>
+									<li><strong>2 Access-Transistoren (M5-M6):</strong> Zugriff über Bitlines & Wordline</li>
+								</ul>
+								<p style="margin-top: 10px;"><strong>Funktion:</strong></p>
+								<ul style="margin-left: 15px; line-height: 1.4;">
+									<li>WL aktiviert Zugriff</li>
+									<li>BL/BLB lesen/schreiben Bit</li>
+									<li>Statisch: kein Refresh</li>
+								</ul>
+								<p style="margin-top: 10px; font-size: 0.65em; color: #aaa;"><strong>Quelle:</strong> <a href="https://www.iue.tuwien.ac.at/phd/entner/node34.html" target="_blank">TU Wien</a></p>
+							</div>
 						</div>
 					</section>
 
